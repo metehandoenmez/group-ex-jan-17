@@ -4,3 +4,53 @@ let data = [
 ];
 
 console.log(data);
+
+
+function checkLarger(a, b) {
+  if (a > b) {
+    return 1;
+  }
+  else if (a < b) {
+    return -1;
+  }
+  else
+    return 0;
+}
+
+/*-------------------------------------------------------*/
+
+function sortArray() {
+  data.sort(checkLarger);
+  console.log(data)
+} 
+sortArray();
+
+/*-------------------------------------------------------*/
+
+function getTotal() {
+  let total=0;
+  for (let i = 0; i < data.length; i++) {
+    total+= data[i];
+  }
+  return total;
+}
+console.log(getTotal());
+
+/*-------------------------------------------------------*/
+
+function checkTotal() {
+  total = getTotal();
+  if (total%2===0) {
+    console.log("Array is even.")
+    return true;
+  }
+  else {
+    console.log("Array is odd.")
+    return false;
+  }
+  }
+checkTotal();
+
+/*-------------------------------------------------------*/
+
+data.filter()
