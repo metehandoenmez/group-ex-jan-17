@@ -12,6 +12,8 @@ Print "Array is odd" or "Array is even" in console, for each case.
 
 Create a function that extracts all odd numbers from this array. Do the same for extracting all the even numbers.
 
+Optional: 
+
 Create a function that calculates the sum of the odd numbers, the even numbers, compares the sums, and returns the array that has the greatest sum.
 
 Optional:
