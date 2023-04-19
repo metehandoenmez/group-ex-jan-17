@@ -53,4 +53,21 @@ checkTotal();
 
 /*-------------------------------------------------------*/
 
-data.filter()
+function isEven(num) {
+  if (num % 2 === 0) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+function onlyOdds(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    var element = arr[i];
+    if (!isEven(element)) {
+      result.push(element);
+    }
+  }
+  return result;
+}
